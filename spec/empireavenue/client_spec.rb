@@ -102,16 +102,16 @@ describe EmpireAvenue::Client do
     end
   end
 
-  describe "#put" do
-    before do
-      stub_put("/custom/put").with({:query => {:client_id => subject.client_id, :access_token => subject.oauth_token}, :body => {:updated => "object"}})
-    end
-    it "allows custom put requests" do
-      pending "odd split method not found error"
-      subject.put("/custom/put", {:updated => "object"})
-      expect(a_put("/custom/put").with({:query => {:client_id => subject.client_id, :access_token => subject.oauth_token}, :body => {:updated => "object"}})).to have_been_made
-    end
-  end
+  #describe "#put" do
+  #  before do
+  #    stub_put("/custom/put").with({:query => {:client_id => subject.client_id, :access_token => subject.oauth_token}, :body => {:updated => "object"}})
+  #  end
+  #  it "allows custom put requests" do
+  #    pending "odd split method not found error"
+  #    subject.put("/custom/put", {:updated => "object"})
+  #    expect(a_put("/custom/put").with({:query => {:client_id => subject.client_id, :access_token => subject.oauth_token}, :body => {:updated => "object"}})).to have_been_made
+  #  end
+  #end
 
   describe "#credentials?" do
     it "returns true if all credentials are present" do

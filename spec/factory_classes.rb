@@ -81,7 +81,34 @@ module EmpireAvenue
 	@data_vars.each {|attr| attr_accessor attr}
 	
       end
+
+      class ProfileShareholdersData
+	extend Data
+
+	@data_vars = [:ticker, :full_name, :last_trade, :close, :yesterday_lowest, :yesterday_highest, :sm_portrait, :lg_portrait, :location, :outstanding_shares, :country, :portfolio_value, :yesterday_earnings, :eav_score, :facebook_score, :flickr_score, :foursquare_score, :gplus_score, :instagram_score, :linkedin_score, :twitter_score, :youtube_score, :shares, :last_buy_shares, :last_buy, :your_shares_held, :max_shares]
+		
+	@data_vars.each {|attr| attr_accessor attr}
+	
+      end
       
+      class PortfolioGetData
+	extend Data
+
+	@data_vars = [:ticker, :full_name, :last_trade, :close, :yesterday_lowest, :yesterday_highest, :sm_portrait, :lg_portrait, :location, :outstanding_shares, :country, :portfolio_value, :yesterday_earnings, :eav_score, :facebook_score, :flickr_score, :foursquare_score, :gplus_score, :instagram_score, :linkedin_score, :twitter_score, :youtube_score, :shares, :last_buy_shares, :last_buy, :your_shares_held, :max_shares]
+		
+	@data_vars.each {|attr| attr_accessor attr}
+	
+      end
+
+      class PortfolioBaseData
+	extend Data
+
+	@data_vars = [:full_name, :last_trade, :close, :ticker, :eav_score, :facebook_score, :flickr_score, :foursquare_score, :gplus_score, :instagram_score, :linkedin_score, :twitter_score, :youtube_score]
+		
+	@data_vars.each {|attr| attr_accessor attr}
+	
+      end
+
       class SearchRecentData
 	extend Data
 	
@@ -96,6 +123,15 @@ module EmpireAvenue
 	
 	@data_vars.each {|attr| attr_accessor attr}
       end
+      
+      class SharesSellData
+	extend Data
+	
+	@data_vars = [:success, :shares_owned, :commission, :bank_balance, :total_earned]
+	
+	@data_vars.each {|attr| attr_accessor attr}
+      end
+      
     end
   end
 end

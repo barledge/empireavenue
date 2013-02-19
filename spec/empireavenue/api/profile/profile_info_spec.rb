@@ -35,6 +35,4 @@ describe EmpireAvenue::API::Profile do
     expect(info[:body][:data][0][:ticker]).to eq "TXWIKINGER"
     expect(info[:body][:data][1][:ticker]).to eq "AVIDBEAVER"
   end
-  
-  
 end

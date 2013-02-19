@@ -26,5 +26,5 @@ Profile Info of accounts
 ea.profile_info(ticker = nil)
 ```
 
-receives the profile information of the given ticker. If no argument is given, the associated profile of the authenticated user is provided. Ticker can be a list of up to tickers in an Array.
+receives the profile information of the given ticker. If no argument is given, the associated profile of the authenticated user is provided. Ticker can be a list of up to 100 tickers in an Array.
 

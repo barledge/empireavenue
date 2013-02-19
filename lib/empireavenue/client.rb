@@ -5,8 +5,12 @@ require 'uri'
 require 'empireavenue/default'
 require 'empireavenue/api/profile_info'
 require 'empireavenue/api/profile_bank_balance'
+require 'empireavenue/api/profile_shareholders'
+require 'empireavenue/api/portfolio_get'
+require 'empireavenue/api/portfolio_base'
 require 'empireavenue/api/search_recent'
 require 'empireavenue/api/shares_buy'
+require 'empireavenue/api/shares_sell'
 require 'empireavenue/error/client_error'
 require 'empireavenue/error/decode_error'
 
@@ -15,6 +19,7 @@ module EmpireAvenue
   #
   class Client
     include EmpireAvenue::API::Profile
+    include EmpireAvenue::API::Portfolio
     include EmpireAvenue::API::Shares
     include EmpireAvenue::API::Search
     include EmpireAvenue::Configurable
