@@ -1,0 +1,14 @@
+*.gem
+*.rbc
+*~
+*swp
+.bundle
+.rvmrc
+.yardoc
+coverage/*
+doc/*
+Gemfile.lock
+log/*
+pkg/*
+TODO
+copied.txt
