@@ -1,9 +1,9 @@
 module EmpireAvenue
   class Version
-    MAJOR = 0 unless defined? Twitter::Version::MAJOR
-    MINOR = 0 unless defined? Twitter::Version::MINOR
-    PATCH = 2 unless defined? Twitter::Version::PATCH
-    PRE = nil unless defined? Twitter::Version::PRE
+    MAJOR = 0 unless defined? EmpireAvenue::Version::MAJOR
+    MINOR = 0 unless defined? EmpireAvenue::Version::MINOR
+    PATCH = 3 unless defined? EmpireAvenue::Version::PATCH
+    PRE = nil unless defined? EmpireAvenue::Version::PRE
 
     class << self
 
