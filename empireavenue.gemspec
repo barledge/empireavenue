@@ -6,13 +6,12 @@ require 'empireavenue/version'
 Gem::Specification.new do |spec|
   spec.add_dependency 'faraday', ['~> 0.8', '< 0.10']
   spec.add_dependency 'multi_json', '~> 1.0'
-  spec.add_dependency 'simple_oauth', '~> 0.2'
   spec.add_development_dependency 'bundler', '~> 1.0'
   spec.authors = ["Ralph Janke"]
   #spec.cert_chain  = ['public_cert.pem']
   spec.description = %q{A Ruby interface to the Empire Avenue API.}
   spec.email = ['txwikinger@ubuntu.com']
-  spec.files = %w(.yardopts CHANGELOG.md CONTRIBUTING.md LICENSE.md README.md Rakefile empireavenue.gemspec)
+  spec.files = %w(LICENSE.md README.md Rakefile empireavenue.gemspec)
   spec.files += Dir.glob("lib/**/*.rb")
   spec.files += Dir.glob("spec/**/*")
   spec.homepage = 'http://txwinger.github.com/empireavenue/'
